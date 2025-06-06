@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Open%20Source%20Software%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Computer%20Vision%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
 # Card Gatcha & Collecting Web Simulation
 포켓몬 카드 웹 시뮬레이션
 
