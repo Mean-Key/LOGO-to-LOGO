@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Computer%20Vision%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
-# Card Gatcha & Collecting Web Simulation
-포켓몬 카드 웹 시뮬레이션
+# Find Logo & Map
+로고 인식 및 위치 표시 프로그램
 
 ## 소개
 이 프로그램은 주어진 코인을 이용해 포켓몬 카드를 뽑고 수집하는 웹 시뮬레이션입니다. <br>
