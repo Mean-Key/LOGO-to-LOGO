@@ -69,7 +69,7 @@ YOLOv8은 다양한 크기의 모델(n/s/m/l/x)을 제공하며, 본 프로젝�
 
 | 왜곡 | 합성 |
 |---------------|----------------|
-| ![image3](etc/test(3).pngg) | ![image4](etc/test(1).jpg) |
+| ![image3](etc/test(3).png) | ![image4](etc/test(1).jpg) |
 
 > 📂 위 이미지는 `assets/` 폴더 또는 외부 이미지 URL로 교체하세요.
 ---
