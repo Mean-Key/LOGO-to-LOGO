@@ -72,6 +72,44 @@
 |---------------|----------------|
 | <img src="etc/test3.png" width="400"> | <img src="etc/test4.jpg" width="400"> |
 
+#### 왜곡 - homography.py 
+
+```python
+def apply_perspective(img, direction, ratio):
+    # direction(top/bottom/left/right)에 따라 원근 변형 좌표 설정
+    M = cv2.getPerspectiveTransform(src, dst)  # 변환 행렬 계산
+    return cv2.warpPerspective(img, M, (w, h))  # 원근 변형 적용
+```
+```python
+def generate():
+    for logo_path in logo_paths:
+        cleaned = clean_image(logo_path)  # 메타데이터 제거 및 RGBA 변환
+        for direction in DIRECTIONS:
+            warped = apply_perspective(logo, direction, ratio)
+            cv2.imwrite(..., warped)  # 왜곡된 이미지 저장
+```
+
+#### 증강 - augmentation.py
+```python
+def rotate_image_no_crop(img, angle):
+    # 이미지 회전 시 잘리지 않도록 크기 확장 후 회전 적용
+    return cv2.warpAffine(img, M, (new_w, new_h))
+```
+```python
+def place_logo_on_background(bg, logo):
+    # 로고를 배경 위 무작위 위치에 합성
+    # YOLO 형식 라벨 (x_center, y_center, width, height) 반환
+    return composite, (x, y, w, h)
+```
+```python
+def generate():
+    for cls_name in class_to_images:
+        for i in range(num_per_class):
+            logo = rotate_image_no_crop(...)
+            comp, label = place_logo_on_background(...)
+            cv2.imwrite(...); write YOLO label to .txt  # 이미지 저장 및 라벨 작성
+```
+
 ---
 
 ### 🧠 1-3. YOLO 학습 방식
