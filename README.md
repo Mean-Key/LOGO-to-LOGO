@@ -285,6 +285,4 @@ avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 - 🏬 **200개 가량의 브랜드까지 클래스 확장** 및 2F, 3F 등 다른 층도 확장 예정
 - 📱 **원하는 매장으로 길찾기 내비게이션 기능 구현** 예정
 
-# Thanks for reading
-
-![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=6DD5FA)
+![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=6DD5FA&text=%20Thanks%20For%20Reading&height=200&fontSize=40&fontColor=ffffff)
