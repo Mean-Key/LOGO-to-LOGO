@@ -286,3 +286,5 @@ avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 - 📱 **원하는 매장으로 길찾기 내비게이션 기능 구현** 예정
 
 # Thanks for reading
+
+![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=6DD5FA)
