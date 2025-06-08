@@ -111,7 +111,7 @@
 
 | 원본 | 단순화 |
 |---------------|----------------|
-| <img src="etc/test1.png" width="200"> | <img src="etc/test2.png" width="200"> |
+| <img src="etc/1F.png" width="200"> | <img src="starfield 1F.png" width="200"> |
 
 
 #### 2. 색상 구분 규칙
