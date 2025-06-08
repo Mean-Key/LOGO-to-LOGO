@@ -154,6 +154,30 @@ yolo task=detect mode=train model=yolov8s.pt data=dataset/data.yaml epochs=100 i
 |---------------|----------------|
 | <img src="etc/1F.png" width="400"> | <img src="etc/starfield 1F.png" width="400"> |
 
+##### 입구 좌표 추출 - gate.py 
+
+```python
+# 빨간색 마스크 (입구 표시 색)
+lower_red = np.array([0, 0, 200])
+upper_red = np.array([50, 50, 255])
+mask = cv2.inRange(img, lower_red, upper_red)
+
+# 외곽선 중심 좌표 계산
+for cnt in contours:
+    M = cv2.moments(cnt)
+    cx = int(M["m10"] / M["m00"])
+    cy = int(M["m01"] / M["m00"])
+    entrance_points.append((cx, cy)
+```
+```python
+# y좌표 우선 내림차순 정렬 → Gate 번호와 연결
+entrance_points.sort(key=lambda pt: (-pt[1], -pt[0]))
+
+# 좌표 파일 저장
+with open("entrance_coordinates.txt", "w") as f:
+    for i, (x, y) in enumerate(entrance_points, 1):
+        f.write(f"{i}: ({x}, {y})\n")
+```
 
 #### 2. 색상 구분 규칙
 | 의미 | 색상 코드 (BGR) | 설명 |
