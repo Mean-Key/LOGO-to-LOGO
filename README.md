@@ -266,12 +266,12 @@ avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 
 ## 🎥 실행 화면
 
-[![Demo](https://img.youtube.com/vi/3MaFJmP7fVA/0.jpg)](https://youtu.be/3MaFJmP7fVA) <br>
-
+![demo](videos/test_img.gif)
+-이미지 인식
+![demo](videos/test_video.gif)
+-비디오 인식
 [![Demo](https://img.youtube.com/vi/J6WfgIRSz5E/0.jpg)](https://youtu.be/J6WfgIRSz5E) <br>
-
-[![Demo](https://img.youtube.com/vi/J6WfgIRSz5E/0.jpg)](https://youtu.be/J6WfgIRSz5E) <br>
-
+-비디오 인식2
 ---
 
 ## 🧪 달성 성과
