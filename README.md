@@ -66,11 +66,11 @@
 
 | 원본 | 추출 |
 |---------------|----------------|
-| <img src="etc/test1.png" width="200"> | <img src="etc/test2.png" width="200"> |
+| <img src="etc/test1.png" width="300"> | <img src="etc/test2.png" width="300"> |
 
 | 왜곡 | 합성 |
 |---------------|----------------|
-| <img src="etc/test3.png" width="200"> | <img src="etc/test4.jpg" width="200"> |
+| <img src="etc/test3.png" width="300"> | <img src="etc/test4.jpg" width="300"> |
 
 ---
 
@@ -111,7 +111,7 @@
 
 | 원본 | 단순화 |
 |---------------|----------------|
-| <img src="etc/1F.png" width="200"> | <img src="starfield 1F.png" width="200"> |
+| <img src="etc/1F.png" width="400"> | <img src="etc/starfield 1F.png" width="400"> |
 
 
 #### 2. 색상 구분 규칙
