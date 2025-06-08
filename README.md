@@ -83,6 +83,7 @@
 ├── class.cell                  # Class ID ↔ 브랜드 매핑 정보
 ├── main.py                     # 메인 실행 파일 (YOLO + GUI 연동)
 └── README.md
+```
 
 ---
 
