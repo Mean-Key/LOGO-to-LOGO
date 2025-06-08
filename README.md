@@ -181,13 +181,14 @@ with open("entrance_coordinates.txt", "w") as f:
 
 #### 2. 색상 구분 규칙
 
-| 의미             | 색상 코드 (BGR)     | 색상 예시 | 설명                                           |
-|------------------|----------------------|------------|------------------------------------------------|
-| 통로 (이동 불가) | (255, 255, 255)      | ![#FFFFFF](https://via.placeholder.com/15/ffffff/000000?text=+) | 흰색 – 각 브랜드 매장이 위치한 셀           |
-| 벽 또는 장애물   | (0, 0, 0)            | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) | 검정 – 경로 불가 영역                         |
-| 매장 영역        | (175, 175, 175)      | ![#AFAFAF](https://via.placeholder.com/15/afafaf/000000?text=+) | 회색 – 사용자가 자유롭게 이동 가능한 공간    |
-| 매장 입구        | (0, 0, 255)          | ![#FF0000](https://via.placeholder.com/15/ff0000/000000?text=+) | 빨강 – 각 매장의 입구                         |
-| 에스컬레이터     | (0, 255, 0)          | ![#00FF00](https://via.placeholder.com/15/00ff00/000000?text=+) | 초록 – 다른 층으로 이동하기 위한 공간         |
+| 의미             | 색상 코드 (BGR)     | 색상 미리보기 | 설명                                           |
+|------------------|----------------------|----------------|------------------------------------------------|
+| 통로 (이동 불가) | (255, 255, 255)      | <span style="display:inline-block;width:15px;height:15px;background:#ffffff;border:1px solid #ccc;"></span> | 흰색 – 각 브랜드 매장이 위치한 셀           |
+| 벽 또는 장애물   | (0, 0, 0)            | <span style="display:inline-block;width:15px;height:15px;background:#000000;border:1px solid #ccc;"></span> | 검정 – 경로 불가 영역                         |
+| 매장 영역        | (175, 175, 175)      | <span style="display:inline-block;width:15px;height:15px;background:#afafaf;border:1px solid #ccc;"></span> | 회색 – 사용자가 자유롭게 이동 가능한 공간    |
+| 매장 입구        | (0, 0, 255)          | <span style="display:inline-block;width:15px;height:15px;background:#ff0000;border:1px solid #ccc;"></span> | 빨강 – 각 매장의 입구                         |
+| 에스컬레이터     | (0, 255, 0)          | <span style="display:inline-block;width:15px;height:15px;background:#00ff00;border:1px solid #ccc;"></span> | 초록 – 다른 층으로 이동하기 위한 공간         |
+
 
 
 #### 3. 실제 적용 예시
