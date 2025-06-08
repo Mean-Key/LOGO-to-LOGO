@@ -66,11 +66,11 @@
 
 | 원본 | 추출 |
 |---------------|----------------|
-| <img src="etc/test1.png" width="300"> | <img src="etc/test2.png" width="300"> |
+| <img src="etc/test1.png" width="400"> | <img src="etc/test2.png" width="400"> |
 
 | 왜곡 | 합성 |
 |---------------|----------------|
-| <img src="etc/test3.png" width="300"> | <img src="etc/test4.jpg" width="300"> |
+| <img src="etc/test3.png" width="400"> | <img src="etc/test4.jpg" width="400"> |
 
 ---
 
