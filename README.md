@@ -1,5 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Computer%20Vision%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
-# Find Logo & Map
+# FIND LOGO
 로고 인식 및 위치 표시 프로그램
 
 ## 소개
