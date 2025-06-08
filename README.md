@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Computer%20Vision%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
 # FIND LOGO
-로고 인식 및 위치 표시 프로그램
+**OpenCV, YOLO 기반 로고 탐지 + 실내 매장 안내 GUI를 구현한 프로젝트**
 
 ## 소개
 이 프로그램은 OpenCV와 YOLO를 이용하여 브랜드들의 로고를 인식하여 <br>
@@ -12,17 +12,12 @@
 ---
 ## 목차 
 1. [프로젝트 개요](#-프로젝트-개요)
-2. [프로젝트 구조](#프로젝트-구조)     
+2. [주요 기능](#-주요-기능)     
 3. [학습 방식](#페이지-구성)
 4. [주요 기능](#-주요-기능)   
 5. [기술 스택](#-기술-스택)   
 6. [실행 화면](#실행-화면)      
 7. [추후 계획](#참조)    
-
----
-# 브랜드 로고 인식 및 매장 내비게이션 시스템
-
-**OpenCV, YOLO 기반 로고 탐지 + 실내 매장 안내 GUI를 구현한 프로젝트**
 
 ---
 
