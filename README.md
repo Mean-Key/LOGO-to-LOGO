@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Computer%20Vision%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
 # FIND LOGO
 
-**OpenCV YOLO 기반 로고 탐지 + 실내 매장 안내 GUI를 구현한 프로젝트**
+**OpenCV, YOLO 기반 로고 탐지 + 매장 안내 GUI를 구현한 프로젝트**
 
 ## 소개
 이 프로그램은 OpenCV와 YOLO를 이용하여 브랜드들의 로고를 인식하여 <br>
