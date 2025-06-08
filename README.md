@@ -205,6 +205,22 @@ with open("entrance_coordinates.txt", "w") as f:
 - map.py와 gate.py를 통해 각 매장의 입구 좌표와 번호 획득 및 사용
 - 탐지된 브랜드 → 해당 매장 위치로 자동 포커스
 
+##### 입구 방향 보정 (앵커 좌표 계산) - way.py
+입구 방향에서 어느정도 떨어진 지점인 **앵커**를 이용해서 위치계산 및 표시 했습니다.
+
+```python
+def shifted_anchor(x, y, direction="down"):
+    # 입구 방향에 따라 위치를 약간 바깥으로 이동시켜 기준점 설정
+    offsets = {"down": 80, "up": 80, "left": 40, "right": 40}
+    return ...  # 방향별 보정 좌표 반환
+```
+```python
+# 여러 입구 좌표 → 방향 보정 → 평균 좌표 계산
+coords = [shifted_anchor(x, y, direction) for num in anchor_nums]
+avg_x = sum(set(x for x, _) in coords) // len(set(x for x, _) in coords)
+avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
+```
+
 ---
 
 ## 📂 프로젝트 구조
