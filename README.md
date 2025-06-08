@@ -199,6 +199,7 @@ with open("entrance_coordinates.txt", "w") as f:
 ---
 
 ### 🗺️ 2-3. 매장 위치 안내
+
 - `map.cell`과 `class.cell`을 이용한 브랜드 ↔ 매장 ↔ 입구 정보 매핑
 - Tkinter로 제작된 GUI 상에 **타원 영역으로 매장 표시**
 - map.py와 gate.py를 통해 각 매장의 입구 좌표와 번호 획득 및 사용
@@ -239,7 +240,11 @@ avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 |   |          ├── starbucks.png
 |   |          └── ...
 |   ├── cells/
-|   ├── txts/          
+│   |     ├── class.cell
+│   |     └── map.cell
+|   ├── txts/
+│   |     ├── entrance_coordinates.txt
+│   |     └── map_array.npy         
 │   └── best.pt 
 ```
 
