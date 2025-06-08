@@ -173,14 +173,8 @@
 
 ## 🎥 실행 화면
 
-[![Demo](https://img.youtube.com/vi/영상ID/0.jpg)](https://www.youtube.com/watch?v=영상ID)
+[![Demo]([https://img.youtube.com/vi/영상ID/0.jpg)](https://www.youtube.com/watch?v=영상ID)](https://youtu.be/3MaFJmP7fVA)
 
-> 또는 직접 mp4 파일을 넣고 싶다면:
-
-```html
-<video src="assets/demo.mp4" controls width="800"></video>
-```
----
 
 ## 🧪 달성 성과
 
