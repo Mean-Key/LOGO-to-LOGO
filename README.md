@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20Computer%20Vision%20Term%20Project&height=200&fontSize=40&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20FIND%20LOGO&height=200&fontSize=40&fontColor=ffffff)
 # FIND LOGO
 
 **OpenCV, YOLO 기반 로고 탐지 + 매장 안내 GUI를 구현한 프로젝트**
@@ -286,4 +286,4 @@ avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 - 🏬 **200개 가량의 브랜드까지 클래스 확장** 및 2F, 3F 등 다른 층도 확장 예정
 - 📱 **원하는 매장으로 길찾기 내비게이션 기능 구현** 예정
 
-![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=6DD5FA&text=%20Thanks%20For%20Reading&height=200&fontSize=40&fontColor=ffffff)
+![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=6DD5FA&height=200&fontSize=40&fontColor=ffffff)
