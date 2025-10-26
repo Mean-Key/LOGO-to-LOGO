@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=6DD5FA&text=%20FIND%20LOGO&height=200&fontSize=40&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=000000&text=%20FIND%20LOGO&height=200&fontSize=40&fontColor=ffffff)
 # LOGO to LOGO
 
 **OpenCV, YOLO 기반 로고 탐지 + 매장 위치 안내 GUI를 구현한 프로젝트**
@@ -50,7 +50,7 @@
 
 | 아디다스 스포츠 | 아디다스 오리지널스 | 아디다스 간판 |
 |---------------|----------------|----------------|
-| <img src="adidas sports.png" width="400"> | <img src="adidas originals.png" width="400"> | <img src="adidas letter.png" width="400"> |
+| <img src="adidas1.png" width="400"> | <img src="adidas2.png" width="400"> | <img src="adidas3.png" width="400"> |
 
 처럼 모두 adidas를 의미하기에 YOLO 모델을 선택했습니다.
 
