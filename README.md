@@ -50,7 +50,7 @@
 
 | 아디다스 스포츠 | 아디다스 오리지널스 | 아디다스 간판 |
 |---------------|----------------|----------------|
-| <img src="etc/test1.png" width="400"> | <img src="etc/test2.png" width="400"> | <img src="etc/test3.png" width="400"> |
+| <img src="adidas sports.png" width="400"> | <img src="adidas orignials.png" width="400"> | <img src="adidas letter.png" width="400"> |
 
 처럼 모두 adidas를 의미하기에 YOLO 모델을 선택했습니다.
 
