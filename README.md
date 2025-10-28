@@ -158,10 +158,10 @@ yolo task=detect mode=train model=yolov8s.pt data=dataset/data.yaml epochs=100 i
 ---
 ### 🧱 2-2. 매장 내부 구현 방식
 
-#### 1. 픽셀 단위 격자화(Grid Mapping)
-- 실제 매장 지도를 **고정 해상도 (예: 2400x800)** 격자로 단순화 및 픽셀화
-- 각 셀(픽셀)은 **해당 위치의 의미를 가지는 색상**으로 채워짐
-- 이 격자는 `NumPy 배열`로 처리되어 추후 경로 탐색 알고리즘에 사용될 예정
+#### 1. 픽셀 단위 단순화
+- 실제 매장 지도를 **고정 해상도 (예: 2400x800)** 로 단순화 및 픽셀화
+- 각 픽셀은 **해당 위치의 의미를 가지는 색상**으로 채워짐
+- 이 이미지는 `NumPy 배열`로 처리되어 경로 탐색 알고리즘에 사용
 
 | 원본 | 단순화 |
 |---------------|----------------|
@@ -193,7 +193,42 @@ with open("entrance_coordinates.txt", "w") as f:
 ```
 ![game_img](starfield_1F_gates.png)
 
-#### 2. 맵 색상 구분표
+#### 2. 매장 내부 인식 및 색상별 구분 - map2.py
+
+```python
+# ====== 색상 범위 정의 (BGR 기준) ======
+color_ranges = {
+    "WHITE": ([240, 240, 240], [255, 255, 255]),  # 매장 내부
+    "BLACK": ([0, 0, 0], [30, 30, 30]),           # 벽
+    "GRAY": ([100, 100, 100], [180, 180, 180]),   # 이동 가능 구역
+    "GREEN": ([0, 150, 0], [100, 255, 100]),      # 에스컬레이터
+    "RED": ([0, 0, 200], [50, 50, 255])           # 입구
+}
+```
+
+```python
+# 개별 마스크 생성
+masks = {}
+for color_name, (low, high) in color_ranges.items():
+  masks[color_name] = cv2.inRange(img, np.array(low), np.array(high))
+  print(f"  {color_name:<6} 검출 완료")
+
+# 이동 불가 = 흰색 + 검정 + 빨강
+blocked = cv2.bitwise_or(masks["WHITE"], masks["BLACK"])
+blocked = cv2.bitwise_or(blocked, masks["RED"])
+
+# 이동 가능 = 회색 + 초록
+walkable = cv2.bitwise_or(masks["GRAY"], masks["GREEN"])
+
+# 최종 맵 (1 = 이동 가능, 0 = 이동 불가능)
+map_array = np.where(walkable > 0, 1, 0).astype(np.uint8)
+```
+
+```python
+# numpy 파일로 저장
+map_path = os.path.join(output_dir, f"map_array_{floor}.npy")
+np.save(map_path, map_array)
+```
 
 | 색상 | 의미 | 설명 |
 |------|------------------|------|
