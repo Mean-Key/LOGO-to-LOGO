@@ -202,17 +202,17 @@ with open("entrance_coordinates.txt", "w") as f:
     <th>설명</th>
   </tr>
   <tr>
-    <td style="background-color:#FFFFFF; border:1px solid #ccc;">WHITE</td>
+    <td style="background-color:FFFFFF; border:1px solid #ccc;">WHITE</td>
     <td>매장 내부</td>
     <td>고객이 이동할 수 없는 영역</td>
   </tr>
   <tr>
-    <td style="background-color:#000000; color:#fff; border:1px solid #999;">BLACK</td>
+    <td style="background-color:000000; color:#fff; border:1px solid #999;">BLACK</td>
     <td>벽체 / 구조물</td>
     <td>이동 불가능한 벽 또는 구획</td>
   </tr>
   <tr>
-    <td style="background-color:#A0A0A0; border:1px solid #666;">GRAY</td>
+    <td style="background-color:A0A0A0; border:1px solid #666;">GRAY</td>
     <td>이동 가능 구역</td>
     <td>고객이 걸을 수 있는 통로 및 공용 공간</td>
   </tr>
