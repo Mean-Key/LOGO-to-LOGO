@@ -195,39 +195,13 @@ with open("entrance_coordinates.txt", "w") as f:
 
 #### 2. 맵 색상 구분표
 
-<table>
-  <tr>
-    <th>색상</th>
-    <th>의미</th>
-    <th>설명</th>
-  </tr>
-  <tr>
-    <td style="background-color:FFFFFF; border:1px solid #ccc;">WHITE</td>
-    <td>매장 내부</td>
-    <td>고객이 이동할 수 없는 영역</td>
-  </tr>
-  <tr>
-    <td style="background-color:000000; color:#fff; border:1px solid #999;">BLACK</td>
-    <td>벽체 / 구조물</td>
-    <td>이동 불가능한 벽 또는 구획</td>
-  </tr>
-  <tr>
-    <td style="background-color:A0A0A0; border:1px solid #666;">GRAY</td>
-    <td>이동 가능 구역</td>
-    <td>고객이 걸을 수 있는 통로 및 공용 공간</td>
-  </tr>
-  <tr>
-    <td style="background-color:#00C000; border:1px solid #666;">GREEN</td>
-    <td>에스컬레이터</td>
-    <td>층간 이동 경로</td>
-  </tr>
-  <tr>
-    <td style="background-color:#FF0000; color:#fff; border:1px solid #666;">RED</td>
-    <td>매장 입구 / Gate</td>
-    <td>매장 출입구</td>
-  </tr>
-</table>
-
+| 색상 | 의미 | 설명 |
+|------|------------------|------|
+| 흰색 | 통로 (이동 불가) | 각 브랜드 매장이 위치한 셀 |
+| 검정 | 벽 또는 장애물 | 경로 불가 영역 |
+| 회색 | 매장 영역 | 사용자가 자유롭게 이동 가능한 공간 |
+| 빨강 | 매장 입구 | 각 매장의 입구 |
+| 초록 | 에스컬레이터 | 다른층으로 이동하기 위한 공간 |
 
 
 
