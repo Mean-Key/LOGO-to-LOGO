@@ -195,13 +195,38 @@ with open("entrance_coordinates.txt", "w") as f:
 
 #### 2. 맵 색상 구분표
 
-| 색상 | 의미 | 설명 |
-|------|------|------|
-| <span style="background-color:#FFFFFF; border:1px solid #CCC; padding:3px 16px; display:inline-block;">WHITE</span> | 매장 내부 | 고객이 이동할 수 없는 영역 |
-| <span style="background-color:000000; border:1px solid #999; padding:3px 16px; display:inline-block; color:#fff;">BLACK</span> | 벽체 / 구조물 | 이동 불가능한 벽 또는 구획 |
-| <span style="background-color:#A0A0A0; border:1px solid #666; padding:3px 16px; display:inline-block;">GRAY</span> | 이동 가능 구역 | 고객이 걸을 수 있는 통로 및 공용 공간 |
-| <span style="background-color:#00C000; border:1px solid #666; padding:3px 16px; display:inline-block;">GREEN</span> | 에스컬레이터 | 층간 이동 경로 |
-| <span style="background-color:#FF0000; border:1px solid #666; padding:3px 16px; display:inline-block; color:#fff;">RED</span> | 매장 입구 / Gate | 매장 출입구 |
+<table>
+  <tr>
+    <th>색상</th>
+    <th>의미</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td style="background-color:#FFFFFF; border:1px solid #ccc;">WHITE</td>
+    <td>매장 내부</td>
+    <td>고객이 이동할 수 없는 영역</td>
+  </tr>
+  <tr>
+    <td style="background-color:#000000; color:#fff; border:1px solid #999;">BLACK</td>
+    <td>벽체 / 구조물</td>
+    <td>이동 불가능한 벽 또는 구획</td>
+  </tr>
+  <tr>
+    <td style="background-color:#A0A0A0; border:1px solid #666;">GRAY</td>
+    <td>이동 가능 구역</td>
+    <td>고객이 걸을 수 있는 통로 및 공용 공간</td>
+  </tr>
+  <tr>
+    <td style="background-color:#00C000; border:1px solid #666;">GREEN</td>
+    <td>에스컬레이터</td>
+    <td>층간 이동 경로</td>
+  </tr>
+  <tr>
+    <td style="background-color:#FF0000; color:#fff; border:1px solid #666;">RED</td>
+    <td>매장 입구 / Gate</td>
+    <td>매장 출입구</td>
+  </tr>
+</table>
 
 
 
