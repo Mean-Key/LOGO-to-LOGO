@@ -203,8 +203,8 @@ with open("entrance_coordinates.txt", "w") as f:
 | RED | 매장 입구 | 각 매장의 입구 | ([0, 150, 0], [100, 255, 100]) |
 | GREEN | 에스컬레이터 | 다른층으로 이동하기 위한 공간 | ([0, 0, 200], [50, 50, 255]) |
 
-- map2.py를 통해 각층의 이미지를 인식하고 색상별로 구분하여 그 정보를 map_array_{floor}.npy로 저장합니다.
-- 
+- map2.py를 통해 각층의 이미지를 인식하고 색상별로 구분하여 그 정보를 `map_array_{floor}.npy`로 저장합니다.
+
 ```python
 # 개별 마스크 생성
 masks = {}
