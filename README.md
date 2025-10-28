@@ -191,6 +191,7 @@ with open("entrance_coordinates.txt", "w") as f:
     for i, (x, y) in enumerate(entrance_points, 1):
         f.write(f"{i}: ({x}, {y})\n")
 ```
+![game_img](starfield_1F_gates.png)
 
 #### 2. 색상 구분 규칙
 
