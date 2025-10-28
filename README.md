@@ -262,6 +262,7 @@ def get_floor_from_gate(gate_num):
     elif 101 <= gate_num <= 178: return "2F"
     else: return "3F"
 ```
+- 입구 좌표에서 일정 거리 떨어진 지점인 **앵커**를 이용해서 현재 위치를 계산 및 표시합니다.
 ```python
 def shifted_anchor(x, y, direction="down"):
     # 입구 방향에 따라 앵커 방향을 설정
@@ -275,15 +276,6 @@ def shifted_anchor(x, y, direction="down"):
     }.get(direction, (x, y))
 ```
 ```python
-# 입구 방향에서 어느정도 떨어진 지점인 **앵커**를 이용해서 위치계산 및 표시 했습니다.
-```
-```python
-def shifted_anchor(x, y, direction="down"):
-    # 입구 방향에 따라 위치를 약간 바깥으로 이동시켜 기준점 설정
-    offsets = {"down": 80, "up": 80, "left": 40, "right": 40}
-    return ...  # 방향별 보정 좌표 반환
-```
-```python
 # 여러 입구 좌표 → 방향 보정 → 평균 좌표 계산
 coords = [shifted_anchor(x, y, direction) for num in anchor_nums]
 avg_x = sum(set(x for x, _) in coords) // len(set(x for x, _) in coords)
@@ -291,9 +283,7 @@ avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 ```
 
 ##### 브랜드 이름 표시 (역 앵커 좌표 계산) - way2.py
-```python
-# 입구 방향에서 어느정도 떨어진 지점인 앵커의 반대 방향인 **역앵커**를 이용해서 브랜드 매장명을 표시 했습니다.
-```
+- 앵커의 반대 방향을 **역앵커** 로 지정하여 해당 좌표에 브랜드 매장명을 표시 했습니다.
 ```python
 # ====== 역앵커 및 브랜드명 표시 ======
 direction = number_to_way.get(gno, "down")
