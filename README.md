@@ -222,6 +222,8 @@ with open("entrance_coordinates.txt", "w") as f:
 - 탐지된 브랜드 → 해당 매장 위치로 자동 포커스
 
 ##### 입구 방향 보정 (앵커 좌표 계산) - way2.py
+![Anchor_img](anchor.png)
+
 ```python
 # 실행 시 인자로 받은 Gate 번호(anchor 번호) 를 리스트로 저장합니다.
 args = sys.argv[1:]
