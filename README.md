@@ -208,7 +208,8 @@ with open("entrance_coordinates.txt", "w") as f:
         <td style="background-color: yellow;">스타일된 셀</td>
         <td>일반 셀</td>
     </tr>
-</table
+</table>
+
 #### 3. 실제 적용 예시
 - 지도 이미지를 불러와 `cv2.resize()`로 축소 → 격자로 변환
 - 각 픽셀 색상을 기준으로 의미를 판별하여 `2D 행렬(map_array)` 생성
