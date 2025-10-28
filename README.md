@@ -216,13 +216,14 @@ with open("entrance_coordinates.txt", "w") as f:
 
 ### 🗺️ 2-3. 매장 위치 안내
 
+![Anchor_img](anchor.png)
+
 - `map.cell`과 `class.cell`을 이용한 브랜드 ↔ 매장 ↔ 입구 정보 매핑
 - Tkinter로 제작된 GUI 상에 **타원 영역으로 매장 표시**
 - map.py와 gate.py를 통해 각 매장의 입구 좌표와 번호 획득 및 사용
 - 탐지된 브랜드 → 해당 매장 위치로 자동 포커스
 
 ##### 입구 방향 보정 (앵커 좌표 계산) - way2.py
-![Anchor_img](anchor.png)
 
 ```python
 # 실행 시 인자로 받은 Gate 번호(anchor 번호) 를 리스트로 저장합니다.
