@@ -193,15 +193,16 @@ with open("entrance_coordinates.txt", "w") as f:
 ```
 ![game_img](starfield_1F_gates.png)
 
-#### 2. 색상 구분 규칙
+#### 2. 맵 색상 구분표
 
-| 의미 | 색상 코드 (BGR) | 설명 |
-|------|------------------|------|
-| 통로 (이동 불가) | (255, 255, 255) | 흰색 – 각 브랜드 매장이 위치한 셀  |
-| 벽 또는 장애물 | (0, 0, 0) | 검정 – 경로 불가 영역 |
-| 매장 영역 | (175, 175, 175) | 회색 – 사용자가 자유롭게 이동 가능한 공간 |
-| 매장 입구 | (0, 0, 255) | 빨강 – 각 매장의 입구 |
-| 에스컬레이터 | (0, 255, 0) | 초록 – 다른층으로 이동하기 위한 공간 | 색깔 추가
+| 색상 | 의미 | 설명 |
+|------|------|------|
+| <span style="background-color:#FFFFFF; border:1px solid #CCC; padding:3px 16px; display:inline-block;">WHITE</span> | 매장 내부 | 고객이 이동할 수 없는 영역 |
+| <span style="background-color:#000000; border:1px solid #999; padding:3px 16px; display:inline-block;">BLACK</span> | 벽체 / 구조물 | 이동 불가능한 벽 또는 구획 |
+| <span style="background-color:#A0A0A0; border:1px solid #666; padding:3px 16px; display:inline-block;">GRAY</span> | 이동 가능 구역 | 고객이 걸을 수 있는 통로 및 공용 공간 |
+| <span style="background-color:#00C000; border:1px solid #666; padding:3px 16px; display:inline-block;">GREEN</span> | 에스컬레이터 | 층간 이동 경로 |
+| <span style="background-color:#FF0000; border:1px solid #666; padding:3px 16px; display:inline-block;">RED</span> | 매장 입구 / Gate | 매장 출입구 |
+
 
 
 
