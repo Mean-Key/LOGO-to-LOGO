@@ -221,7 +221,25 @@ with open("entrance_coordinates.txt", "w") as f:
 - map.py와 gate.py를 통해 각 매장의 입구 좌표와 번호 획득 및 사용
 - 탐지된 브랜드 → 해당 매장 위치로 자동 포커스
 
-##### 입구 방향 보정 (앵커 좌표 계산) - way.py
+##### 입구 방향 보정 (앵커 좌표 계산) - way2.py
+```python
+# 실행 시 인자로 받은 Gate 번호(anchor 번호) 를 리스트로 저장합니다.
+args = sys.argv[1:]
+anchor_nums = [int(x) for x in args if x.isdigit()]
+```
+```python
+# Gate 번호에 따라 해당 층(Floor) 을 자동 판별합니다.
+def get_floor_from_gate(gate_num):
+    if 1 <= gate_num <= 100: return "1F"
+    elif 101 <= gate_num <= 178: return "2F"
+    else: return "3F"
+```
+```python
+def shifted_anchor(x, y, direction="down"):
+    # 입구 방향에 따라 위치를 약간 바깥으로 이동시켜 기준점 설정
+    offsets = {"down": 80, "up": 80, "left": 40, "right": 40}
+    return ...  # 방향별 보정 좌표 반환
+```
 ```python
 # 입구 방향에서 어느정도 떨어진 지점인 **앵커**를 이용해서 위치계산 및 표시 했습니다.
 ```
