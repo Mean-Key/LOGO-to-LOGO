@@ -276,20 +276,26 @@ def shifted_anchor(x, y, direction="down"):
     }.get(direction, (x, y))
 ```
 ```python
-# 여러 입구 좌표 → 방향 보정 → 평균 좌표 계산
-coords = [shifted_anchor(x, y, direction) for num in anchor_nums]
-avg_x = sum(set(x for x, _) in coords) // len(set(x for x, _) in coords)
-avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
+# 여러 입구 좌표 → 앵커 좌표 보정 → 평균 좌표 계산
+if selected_anchors:
+    avg_x = sum(x for x, _ in selected_anchors) // len(selected_anchors)
+    avg_y = sum(y for _, y in selected_anchors) // len(selected_anchors)
+elif entrances_current_floor:
+    avg_x = sum(x for x, _ in entrances_current_floor) // len(entrances_current_floor)
+    avg_y = sum(y for _, y in entrances_current_floor) // len(entrances_current_floor)
+else:
+    h, w, _ = img.shape
+    avg_x, avg_y = w // 2, h // 2
 ```
 
 ##### 브랜드 이름 표시 (역 앵커 좌표 계산) - way2.py
-- 앵커의 반대 방향을 **역앵커** 로 지정하여 해당 좌표에 브랜드 매장명을 표시 했습니다.
 ```python
 # ====== 역앵커 및 브랜드명 표시 ======
 direction = number_to_way.get(gno, "down")
 reverse_dir = {"up": "down", "down": "up", "left": "right", "right": "left"}[direction]
 rx, ry = shifted_anchor(x, y, reverse_dir)
 ```
+- 앵커의 반대 방향을 **역앵커** 로 지정하여 해당 좌표에 브랜드 매장명을 표시 했습니다.
 
 ## 📂 프로젝트 구조
 
