@@ -262,7 +262,7 @@ def get_floor_from_gate(gate_num):
     elif 101 <= gate_num <= 178: return "2F"
     else: return "3F"
 ```
-- 입구 좌표에서 일정 거리 떨어진 지점인 **앵커**를 이용해서 현재 위치를 계산 및 표시합니다.
+- YOLO_LOGO_{}.py를 통해 인식된 브랜드들의 Gate No와 Name 정보 저장하고 사용합니다.
 ```python
 def shifted_anchor(x, y, direction="down"):
     # 입구 방향에 따라 앵커 방향을 설정
@@ -275,6 +275,7 @@ def shifted_anchor(x, y, direction="down"):
         "right": (x + offset, y),
     }.get(direction, (x, y))
 ```
+- 입구 좌표에서 일정 거리 떨어진 지점인 **앵커**를 이용해서 현재 위치를 계산 및 표시합니다.
 ```python
 # 여러 입구 좌표 → 앵커 좌표 보정 → 평균 좌표 계산
 if selected_anchors:
