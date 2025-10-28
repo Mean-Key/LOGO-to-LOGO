@@ -239,19 +239,19 @@ np.save(map_path, map_array)
 
 ---
 
-### 🗺️ 2-3. 매장 위치 안내
+### 🗺️ 2-3. 현재 위치 와 인식한 브랜드 이름 표시
 
 ![Anchor_img](anchor.png)
 
-- `map.cell`과 `class.cell`을 이용한 브랜드 ↔ 매장 ↔ 입구 정보 매핑
-- Tkinter로 제작된 GUI 상에 **타원 영역으로 매장 표시**
-- map.py와 gate.py를 통해 각 매장의 입구 좌표와 번호 획득 및 사용
+- `class2.cell`을 이용한 브랜드 ↔ 매장 ↔ 입구 정보 매핑
+- Tkinter로 제작된 GUI 상에 **타원 영역으로 현재 위치 표시**
+- gate2.py와 map2.py를 통해 각 매장의 입구 좌표와 번호 획득 및 사용
 - 탐지된 브랜드 → 해당 매장 위치로 자동 포커스
 
 ##### 입구 방향 보정 (앵커 좌표 계산) - way2.py
 
 ```python
-# 실행 시 인자로 받은 Gate 번호(anchor 번호) 를 리스트로 저장합니다.
+# 실행 시 인자로 받은 Gate 번호를 리스트로 저장합니다.
 args = sys.argv[1:]
 anchor_nums = [int(x) for x in args if x.isdigit()]
 ```
@@ -264,9 +264,15 @@ def get_floor_from_gate(gate_num):
 ```
 ```python
 def shifted_anchor(x, y, direction="down"):
-    # 입구 방향에 따라 위치를 약간 바깥으로 이동시켜 기준점 설정
-    offsets = {"down": 80, "up": 80, "left": 40, "right": 40}
-    return ...  # 방향별 보정 좌표 반환
+    # 입구 방향에 따라 앵커 방향을 설정
+    offsets = {"down": 80, "up": 80, "left": 50, "right": 50}
+    offset = offsets.get(direction, 0)
+    return {
+        "down": (x, y + offset),
+        "up": (x, y - offset),
+        "left": (x - offset, y),
+        "right": (x + offset, y),
+    }.get(direction, (x, y))
 ```
 ```python
 # 입구 방향에서 어느정도 떨어진 지점인 **앵커**를 이용해서 위치계산 및 표시 했습니다.
@@ -284,23 +290,16 @@ avg_x = sum(set(x for x, _) in coords) // len(set(x for x, _) in coords)
 avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
 ```
 
-##### 브랜드 이름 표시 (역 앵커 좌표 계산) - way.py
+##### 브랜드 이름 표시 (역 앵커 좌표 계산) - way2.py
 ```python
 # 입구 방향에서 어느정도 떨어진 지점인 앵커의 반대 방향인 **역앵커**를 이용해서 브랜드 매장명을 표시 했습니다.
 ```
 ```python
-def shifted_anchor(x, y, direction="down"):
-    # 입구 방향에 따라 위치를 약간 바깥으로 이동시켜 기준점 설정
-    offsets = {"down": 80, "up": 80, "left": 40, "right": 40}
-    return ...  # 방향별 보정 좌표 반환
+# ====== 역앵커 및 브랜드명 표시 ======
+direction = number_to_way.get(gno, "down")
+reverse_dir = {"up": "down", "down": "up", "left": "right", "right": "left"}[direction]
+rx, ry = shifted_anchor(x, y, reverse_dir)
 ```
-```python
-# 여러 입구 좌표 → 방향 보정 → 평균 좌표 계산
-coords = [shifted_anchor(x, y, direction) for num in anchor_nums]
-avg_x = sum(set(x for x, _) in coords) // len(set(x for x, _) in coords)
-avg_y = sum(set(y for _, y) in coords) // len(set(y for _, y) in coords)
-```
----
 
 ## 📂 프로젝트 구조
 
