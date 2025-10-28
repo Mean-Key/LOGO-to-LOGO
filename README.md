@@ -203,12 +203,6 @@ with open("entrance_coordinates.txt", "w") as f:
 | 빨강 | 매장 입구 | 각 매장의 입구 |
 | 초록 | 에스컬레이터 | 다른층으로 이동하기 위한 공간 |
 
-<table>
-    <tr>
-        <td style="background-color: yellow;">스타일된 셀</td>
-        <td>일반 셀</td>
-    </tr>
-</table>
 
 #### 3. 실제 적용 예시
 - 지도 이미지를 불러와 `cv2.resize()`로 축소 → 격자로 변환
