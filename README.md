@@ -241,7 +241,7 @@ np.save(map_path, map_array)
 
 ### 🗺️ 2-3. 현재 위치 와 인식한 브랜드 이름 표시
 
-![Anchor_img](etc/anchor.png)
+![Anchor_img](etc/anchor_en.png)
 
 - `class2.cell`을 이용한 브랜드 ↔ 매장 ↔ 입구 정보 매핑
 - Tkinter로 제작된 GUI 상에 **타원 영역으로 현재 위치 표시**
