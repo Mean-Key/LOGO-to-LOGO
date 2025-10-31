@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=000000&text=%20LOGO%20to%20LOGO&height=200&fontSize=40&fontColor=ffffff)
 # LOGO to LOGO
 
-![title img](.etc/main_title.png)
+![title img](etc/main_title.png)
 
 **OpenCV, YOLO 기반 로고 탐지 + 매장 위치 안내 GUI를 구현한 프로젝트**
 
