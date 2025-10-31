@@ -51,7 +51,7 @@
 
 | 아디다스 스포츠 | 아디다스 오리지널스 | 아디다스 매장간판 |
 |---------------|----------------|----------------|
-| <img src="adidas1.png" width="400"> | <img src="adidas2.png" width="400"> | <img src="adidas3.png" width="400"> |
+| <img src="etc/adidas1.png" width="400"> | <img src="etc/adidas2.png" width="400"> | <img src="etc/adidas3.png" width="400"> |
 
 > 객체 인식 모델은 여러가지가 있지만 위 처럼 서로 다르지만 모두 Adidas로 인식을 하기위해 **YOLO** 모델을 선택했습니다.
 
@@ -191,7 +191,7 @@ with open("entrance_coordinates.txt", "w") as f:
     for i, (x, y) in enumerate(entrance_points, 1):
         f.write(f"{i}: ({x}, {y})\n")
 ```
-![game_img](starfield_1F_gates.png)
+![game_img](etc/starfield_1F_gates.png)
 
 #### 2. 매장 내부 인식 및 색상별 구분 - map2.py
 
@@ -241,7 +241,7 @@ np.save(map_path, map_array)
 
 ### 🗺️ 2-3. 현재 위치 와 인식한 브랜드 이름 표시
 
-![Anchor_img](anchor.png)
+![Anchor_img](etc/anchor.png)
 
 - `class2.cell`을 이용한 브랜드 ↔ 매장 ↔ 입구 정보 매핑
 - Tkinter로 제작된 GUI 상에 **타원 영역으로 현재 위치 표시**
