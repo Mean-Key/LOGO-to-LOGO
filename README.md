@@ -299,7 +299,7 @@ rx, ry = shifted_anchor(x, y, reverse_dir)
 - 앵커의 반대 방향을 **역앵커** 로 지정하여 해당 좌표에 브랜드 매장명을 표시 했습니다.
 
 ## 📂 프로젝트 구조
-![structer img](etc/structer.png)
+![structure img](etc/structure.png)
 ```plaintext
 ├── TermProject/
 │   ├── codes/
