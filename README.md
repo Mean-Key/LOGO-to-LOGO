@@ -168,7 +168,7 @@ yolo task=detect mode=train model=yolov8s.pt data=dataset/data.yaml epochs=100 i
 | <img src="etc/1F.png" width="400"> | <img src="etc/starfield 1F.png" width="400"> |
 
 ##### 입구 좌표 추출 - gate.py 
-
+![text img](etc/textfile.png)
 ```python
 # 빨간색 마스크 (입구 표시 색)
 lower_red = np.array([0, 0, 200])
@@ -191,7 +191,7 @@ with open("entrance_coordinates.txt", "w") as f:
     for i, (x, y) in enumerate(entrance_points, 1):
         f.write(f"{i}: ({x}, {y})\n")
 ```
-![game_img](etc/starfield_1F_gates.png)
+![gate_img](etc/starfield_1F_gates.png)
 
 #### 2. 매장 내부 인식 및 색상별 구분 - map2.py
 
@@ -299,7 +299,7 @@ rx, ry = shifted_anchor(x, y, reverse_dir)
 - 앵커의 반대 방향을 **역앵커** 로 지정하여 해당 좌표에 브랜드 매장명을 표시 했습니다.
 
 ## 📂 프로젝트 구조
-
+![structer img](etc/structer.png)
 ```plaintext
 ├── TermProject/
 │   ├── codes/
