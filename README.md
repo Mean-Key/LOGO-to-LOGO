@@ -476,17 +476,25 @@ F --> I[Find_different]
 ---
 
 ## 🎥 실행 화면
-|![demo](video/est_img.gif)|
+|![demo](etc/test_img.png)|
 |-----------|
 | 이미지 인식 |
-![demo](videos/test_video.gif)
--비디오 인식
-![demo](videos/test_way.gif)
--내 위치 표시
-![demo](videos/test_same.gif)
--같은 층에서 길찾기
-![demo](videos/test_different.gif)
--다른 층에서 길찾기
+
+|![demo](video/test_webcam.gif)|
+|-----------|
+| 웹캠 인식 |
+
+|![demo](video/test_video.mp4)|
+|-----------|
+| 비디오 인식 |
+
+|![demo](video/test_same.mp4)|
+|-----------|
+| 같은층 경로탐색 |
+
+|![demo](video/test_different.mp4)|
+|-----------|
+| 다른층 경로탐색 |
 
 ---
 
