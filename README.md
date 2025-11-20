@@ -487,15 +487,15 @@ F --> I[Find_different]
 
 | 비디오 인식 |
 |-----------|
-| ![video_demo](video/test_video.mp4) |
+| ![video_demo](video/test_video.gif) |
 
 | 같은층 경로탐색 |
 |-----------|
-| ![same_demo](video/test_same.mp4) |
+| ![same_demo](video/test_same.gif) |
 
 | 다른층 경로탐색 |
 |-----------|
-| ![different_demo](video/test_different.mp4) |
+| ![different_demo](video/test_different.gif) |
 
 ---
 
