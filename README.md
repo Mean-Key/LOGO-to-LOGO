@@ -169,9 +169,9 @@ yolo task=detect mode=train model=yolov8s.pt data=dataset/data.yaml epochs=100 i
 - 실제 매장 지도를 **고정 해상도 (예: 2400x800)** 로 단순화 및 픽셀화
 - 각 픽셀은 **해당 위치의 의미를 가지는 색상**으로 채워짐
 
-| 원본 | 단순화 |
+| 원본 | 픽셀 단위 단순화 |
 |---------------|----------------|
-| <img src="etc/1F.png" width="400"> | <img src="etc/starfield_1F.png" width="400"> |
+| <img src="etc/real_1F.png" width="400"> | <img src="etc/starfield_1F.png" width="400"> |
 
 | 지도 배열 및 입구 좌표 추출 |
 |---------------|
