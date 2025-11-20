@@ -476,25 +476,25 @@ F --> I[Find_different]
 ---
 
 ## 🎥 실행 화면
-|![demo](etc/test_img.png)|
-|-----------|
 | 이미지 인식 |
-
-|![demo](video/test_webcam.gif)|
 |-----------|
+| ![img_demo](etc/test_img.png) |
+
 | 웹캠 인식 |
-
-|![demo](video/test_video.mp4)|
 |-----------|
+| ![webcam_demo](video/test_webcam.gif) |
+
 | 비디오 인식 |
-
-|![demo](video/test_same.mp4)|
 |-----------|
+| ![video_demo](video/test_video.mp4) |
+
 | 같은층 경로탐색 |
-
-|![demo](video/test_different.mp4)|
 |-----------|
+| ![same_demo](video/test_same.mp4) |
+
 | 다른층 경로탐색 |
+|-----------|
+| ![different_demo](video/test_different.mp4) |
 
 ---
 
