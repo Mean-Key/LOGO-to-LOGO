@@ -477,13 +477,14 @@ F --> I[Find_different]
 ---
 
 ## 🎥 실행 화면
-| 이미지 인식 |
-|-----------|
-| ![img_demo](etc/test_img.png) |
 
 | 웹캠 인식 |
 |-----------|
 | ![webcam_demo](video/test_webcam.gif) |
+
+| 이미지 인식 |
+|-----------|
+| ![img_demo](etc/test_img.png) |
 
 | 비디오 인식 |
 |-----------|
