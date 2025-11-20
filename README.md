@@ -82,7 +82,7 @@
 1. 원본 이미지에서 특징적인 부분 추출
 2. 추출한 이미지를 **homography** 를 이용하여상하좌우 왜곡
 3. 추출 이미지와 왜곡 이미지를 다양한 배경과 합성 (매장, 거리, 테이블 등)
-4. 랜덤 회전(±15°), 확대(1.3–1.5배) 등 적용
+4. 랜덤 회전(±15°), 크기 변경 (0.7 ~ 1.3배) 등 적용
 
 
 | 원본 | 로고 추출 |
@@ -438,24 +438,25 @@ F --> I[Find_different]
 ```plaintext
 ├── LOGO to LOGO/
 │   ├── codes/
-│   |     ├── main2.py
-│   |     ├── YOLO_LOGO_img2.py
-│   |     ├── YOLO_LOGO_video2.py
-│   |     ├── YOLO_LOGO_webcam2.py
-│   |     ├── way2.py
+│   |     ├── main.py
+│   |     ├── YOLO_LOGO_img.py
+│   |     ├── YOLO_LOGO_video.py
+│   |     ├── YOLO_LOGO_webcam.py
+│   |     ├── way.py
 │   |     ├── where.py
 │   |     ├── finding_same.py
 │   |     ├── finding_different.py
 │   |     └── ...
 │   ├── images/
-│   |     ├── starfield 1F~3F.png
-│   |     ├── title.png
+│   |     └── etc/
+|   |     |    ├── starfield 1F~3F.png
+|   |     |    ├── title.png
 │   |     └── logo/
 |   |          ├── adidas1.png
 |   |          ├── starbucks.png
 |   |          └── ...
 |   ├── cells/
-│   |     └── class2.cell
+│   |     └── class.cell
 |   ├── txts/
 │   |     ├── entrance_coordinates.txt
 │   |     └── map_array.npy         
