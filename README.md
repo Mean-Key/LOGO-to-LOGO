@@ -476,7 +476,7 @@ F --> I[Find_different]
 ---
 
 ## 🎥 실행 화면
-|![demo](test_img.gif)|
+|![demo](etc/est_img.gif)|
 |-----------|
 | 이미지 인식 |
 ![demo](videos/test_video.gif)
