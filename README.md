@@ -459,7 +459,7 @@ F --> I[Find_different]
 │   |     └── class.cell
 |   ├── txts/
 │   |     ├── entrance_coordinates.txt
-│   |     └── map_array.npy         
+│   |     └── map_array 1F~3F.npy         
 │   └── best.pt 
 ```
 
